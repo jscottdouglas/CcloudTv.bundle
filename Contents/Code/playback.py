@@ -4,7 +4,7 @@
 # https://forums.plex.tv/index.php/topic/83083-iptvbundle-plugin-that-plays-iptv-streams-from-a-m3u-playlist/?hl=iptv
 # https://github.com/Cigaras/IPTV.bundle
 #
-# Copyright © 2013-2015 Valdas Vaitiekaitis
+# Copyright Â© 2013-2015 Valdas Vaitiekaitis
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -208,6 +208,7 @@ def CreateVideoClipObject(url, title, thumb, summary, session, inc_container = F
 				key = Callback(CreateVideoClipObject, url = url, title = title, thumb = thumb, summary = summary, session = session, inc_container = True, dontUseURLServ=dontUseURLServ, rating=rating, duration=duration, headers=headers),
 				rating_key = title,
 				#url = url,
+				duration = 86400000,
 				title = title,
 				summary = summary,
 				thumb = thumb,
